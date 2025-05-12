@@ -1,11 +1,15 @@
-/* estilos.css - Estilos base para Dulce Sabor */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* estilos.css - Estilos base para Dulce Sabor */
 
 body {
-    background-color: #fff8f0;
+    background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    color: #4b2e2e;
+    color: #3e2701;
 }
 
 .container {
@@ -14,7 +18,92 @@ body {
 }
 
 header, footer {
-    background-color: #f4d3c2;
+    background-color: 	#f1cce3;
     padding: 1em;
+    text-align: center;
     margin-bottom: 1em;
+}
+/* Estilos del navegador */
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+/* Estilos de los ítems de la lista */
+nav ul li{
+    margin: 0 15px;
+}
+/* Estilos a los enlaces del navegador */
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Estilos a los enlaces cuando se pasa el mouse */
+nav ul li a:hover{
+    text-decoration: underline;
+}
+/* Estilo al area principal */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+
+.logo {
+    width: 100px;
+    max-width: 100%;
+    justify-content: center;
+}
+.imagen_inicio{
+    width: 40vw; 
+    height: auto;
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    /* Cambiar la orientación a columnas del menú */
+    nav {
+        display: flex; /* Necesario para que funcione el flexbox */
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    /* Ajustar los márgenes superiores entre cada menú */
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* Estilos de las tarjetas de servicios */
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+/* Estilos a cada tarjeta */
+.tarjeta{
+    background-color: #f4f1f3;
+    padding: 20px;
+    border: 2px solid #ed98d2;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
 }

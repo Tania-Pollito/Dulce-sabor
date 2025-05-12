@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dulce Sabor</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="img/logo-dulcesabor.jpg" alt="Logo del negocio" class="logo">
+        <h1><em>Dulce Sabor</em></h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="tienda.html">Dulce Tienda</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </header>
+
+      <main>
+        <h2>Formulario de Contacto</h2>
+        <form action="/enviarFormulario" method="POST"> <!-- Cambia la acción según cómo proceses el formulario -->
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo_pastel">Tipo de pastel:</label>
+                <select id="tipo_pastel" name="tipo_pastel" required>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vainilla">Vainilla</option>
+                    <option value="fresa">Fresa</option>
+                    <option value="red_velvet">Red Velvet</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="aceptacion">
+                    <input type="checkbox" id="aceptacion" name="aceptacion" required>
+                    Acepto los <a href="/terminos" target="_blank">términos y condiciones</a>.
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+      <footer>
+        <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
+      </footer>
+    </div>
+  </body>
+</html>
