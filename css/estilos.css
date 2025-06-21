@@ -206,4 +206,108 @@ footer {
     margin-top: 10px;
   }
 }
+/* Estilos para la factura - Diseño Pastelería */
+.factura-container {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+}
 
+.factura {
+    background: #fff9f9;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #ffb6c1;
+}
+
+.factura-header {
+    background: linear-gradient(to right, #ff85a2, #ffb6c1);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.factura-header h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.factura-body {
+    padding: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ffe5ec;
+}
+
+th {
+    background: #ffe5ec;
+    font-weight: 600;
+}
+
+.factura-footer {
+    padding: 1.5rem;
+    background: #fff0f3;
+}
+
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.total-line.total {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #ff85a2;
+    margin-top: 1rem;
+}
+
+.btn-pagar {
+    width: 100%;
+    padding: 12px;
+    background: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-pagar:hover {
+    background: #e76d8c;
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .factura-header h3 {
+        font-size: 1.5rem;
+    }
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+.tarjeta {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
