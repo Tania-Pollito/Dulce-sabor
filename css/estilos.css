@@ -1,3 +1,15 @@
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+    color: #e60781;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 1.5 rem;
+    color: #f0319a;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +17,23 @@
 }/* estilos.css - Estilos base para Dulce Sabor */
 
 body {
-    background-color: #ffffff;
+    background-color: #ececec;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    color: #3e2701;
+    color: #350236;
 }
+p {
+    font-size: 1.2rem;
+    font-family: 'Great vibe';
+    line-height: 1.8; /* Más espacio entre líneas */
+    margin-bottom: 1.2em; /* Espacio entre párrafos */
+    text-align: center; /* o left si prefieres */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .container {
     width: 900px;
@@ -113,7 +136,7 @@ body {
   background: #fff8f4;
   margin: 0;
   padding: 15px;
-  color: #333;
+  color: #351f03;
 }
 
 .container {
@@ -127,7 +150,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: #ffc0cb;
+  background: #fac3cd;
   padding: 15px;
   border-radius: 10px;
 }
